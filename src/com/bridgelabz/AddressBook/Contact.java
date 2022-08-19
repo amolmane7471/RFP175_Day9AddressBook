@@ -60,17 +60,15 @@ public class Contact {
 		this.zip = zip;
 	}
 	@Override
-	public String toString() {
-		return "*******************************"+
-				"firstName=" + firstName + "\n"
-				+ ", lastName=" + lastName + "\n"
-				+ ", address=" + address + "\n"
-				+ ", city=" + city + "\n"
-				+ ", state=" + state + "\n"
-				+ ", email=" + email + "\n"
-				+ ", phoneNo=" + phoneNo + "\n" 
-				+ ", zip=" + zip +"\n";
+	 public String toString() {
+        return "*************************************\n"+
+        		"First Name : " + firstName + "\n"
+        		+ " Last Name : " + lastName + "\n "
+        		+ "Phone Number : " + phoneNo + "\n"
+        		+ " email ID : " + email + "\n"
+        		+ " address :  " + address + "\n"
+        		+ " City : " + city + "\n"
+        		+ " State : " + state + "\n"
+        		+ " Zipcode : " + zip + "\n";
+    	}
 	}
-
-	
-}
