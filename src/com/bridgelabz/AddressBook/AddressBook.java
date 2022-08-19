@@ -93,5 +93,19 @@ public class AddressBook {
 	       
 	   }  
 	   
-	}
-
+	public void deleteContact()
+	   {		  
+		System.out.println("Enter the name of the Person to Delete the contact details");
+	    String name = sc.next();
+	    for (int i = 0; i < contactList.size(); i++) {
+		Contact contacts = contactList.get(i);
+		if (name.equals(contacts.getFirstName())) 
+		{	
+			contactList.remove(i);
+			System.out.println("Deleted Successfully!");
+		}
+		else
+			System.out.println("contact is not exist !");
+		}
+	   }
+}
