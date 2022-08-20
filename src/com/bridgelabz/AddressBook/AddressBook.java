@@ -6,10 +6,11 @@ public class AddressBook {
 	static ArrayList<Contact> contactList = new ArrayList<>(); 
 	Scanner sc = new Scanner(System.in);
 	
+
 	public void addContact()
 	{
-	Contact contact = new Contact();	
-	System.out.println("enter first name");
+	    Contact contact = new Contact();
+	    System.out.println("enter first name");
     	contact.setFirstName(sc.next());
     	System.out.println("enter last name");
     	contact.setLastName(sc.next());
@@ -93,5 +94,19 @@ public class AddressBook {
 	       
 	   }  
 	   
-	}
-
+	public void deleteContact()
+	   {		  
+		System.out.println("Enter the name of the Person to Delete the contact details");
+	    String name = sc.next();
+	    for (int i = 0; i < contactList.size(); i++) {
+		Contact contacts = contactList.get(i);
+		if (name.equals(contacts.getFirstName())) 
+		{	
+			contactList.remove(i);
+			System.out.println("Deleted Successfully!");
+		}
+		else
+			System.out.println("contact is not exist !");
+		}
+	   }
+}
