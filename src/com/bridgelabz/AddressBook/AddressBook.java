@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class AddressBook {
 	static ArrayList<Contact> contactList = new ArrayList<>(); 
 	Scanner sc = new Scanner(System.in);
-	Contact contact = new Contact();
 	
 	public void addContact()
 	{
-		System.out.println("enter first name");
+	Contact contact = new Contact();	
+	System.out.println("enter first name");
     	contact.setFirstName(sc.next());
     	System.out.println("enter last name");
     	contact.setLastName(sc.next());
